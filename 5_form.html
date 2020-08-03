@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Esprezzo | Your Perfect Cup</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/a86c639b2f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!-- Google Tag Manager -->
+    <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTG2NFR');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Navigation -->
+
+    <nav>
+      <div class="ui top fixed menu">
+        <a href="1_index.html">
+          <div class="item">
+            <img src="img/Logo/00_logo.png">
+          </div>
+        </a>
+        <a href="2_products.html" class="item">Produkte</a>
+        <a href="6_under_construction.html" class="item">Über Uns</a>
+        <a href="6_under_construction.html" class="item">Anmelden</a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="sixteen wide column">
+      <img class="ui fluid image" src="img/banner.jpg">
+    </div>
+
+    <!-- Main Page -->
+
+    <main>
+
+      <div class="ui basic segment">
+        <button class="ui button">
+          Anmelden
+        </button>
+        <div class="ui button" tabindex="0">
+          Registrieren
+        </div>
+        <div class="ui button" tabindex="0">
+          Als Gast bestellen
+        </div>
+      </div>
+
+      <div class="ui basic segment">
+        <form class="ui form">
+          <h4 class="ui dividing header">Versandinformation</h4>
+          <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="versand[vor-name]" placeholder="Vorname">
+              </div>
+              <div class="field">
+                <input type="text" name="versand[nach-name]" placeholder="Nachname">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Kontakt</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="versand[email]" placeholder="E-Mail">
+              </div>
+              <div class="field">
+                <input type="text" name="versand[phone]" placeholder="Telefon">
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <label>Rechnungsadresse</label>
+            <div class="fields">
+              <div class="twelve wide field">
+                <input type="text" name="versand[adresse]" placeholder="Strasse">
+              </div>
+              <div class="four wide field">
+                <input type="text" name="versand[adresse-2]" placeholder="Strassen-Nummer">
+              </div>
+            </div>
+          </div>
+          <div class="three fields">
+            <div class="field">
+              <input type="text" name="versand[plz]" placeholder="Postleitzahl (PLZ)">
+            </div>
+            <div class="field">
+              <input type="text" name="versand[ort]" placeholder="Ort">
+            </div>
+            <div class="field">
+              <select class="ui fluid search dropdown" name="versand[land]">
+                <option value="">Land</option>
+                <option value="1">Schweiz</option>
+                <option value="2">Liechtenstein</option>
+              </select>
+            </div>
+          </div>
+          <h4 class="ui dividing header">Zahlungsinformationen</h4>
+          <div class="field">
+            <select class="ui fluid search dropdown" name="bezahlung[art]">
+              <option value="">Bezahlmethode</option>
+              <option value="1">Twint</option>
+              <option value="2">Vorauszahlung</option>
+            </select>
+          </div>
+          <a href="7_bestellung_danke.html">
+            <div class="ui green button" tabindex="0">Bestellung Abschliessen</div>
+          </a>
+        </form>
+      </div>
+
+    </main>
+
+    <!-- Sidebar  -->
+
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="sixteen wide centered column">
+        <div class="ui horizontal segments">
+          <div class="ui segment">
+            <p>Esprezzo Inc.</p>
+          </div>
+          <div class="ui segment">
+            <p></p>
+          </div>
+          <div class="ui segment">
+            <p>Kontakt</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

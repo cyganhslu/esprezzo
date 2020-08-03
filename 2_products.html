@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Esprezzo | Your Perfect Cup</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/a86c639b2f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <!--
+    <script>
+
+    </script>
+  -->
+  <script>
+// Measures product impressions and also tracks a standard.
+// pageview for the tag configuration.
+// Product impressions are sent by pushing an impressions object.
+// containing one or more impressionFieldObjects.
+    dataLayer = [{
+      'ecommerce': {
+        'impressions': [
+          {
+            'id':'001',
+            "brand":"La Tazza",
+            "name": "Uno",
+            "price":"9.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"weiss",
+            "list": "products",
+            "position": 1
+          },
+          {
+            'id':'002',
+            "brand":"La Tazza",
+            "name": "Due",
+            "price":"10.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"schwarz",
+            "list": "products",
+            "position": 2
+          },
+          {
+            'id':'003',
+            "brand":"Cuppa",
+            "name":
+            "One Plus",
+            "price":"11.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"weiss",
+            "list": "products",
+            "position": 3
+          },
+          {
+            'id':'004',
+            "brand":"Cuppa",
+            "name": "Two Extra",
+            "price":"12.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"schwarz",
+            "list": "products",
+            "position": 4
+          },
+          {
+            'id':'005',
+            "brand":"CeramicsLab",
+            "name": "Bova",
+            "price":"8.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"weiss",
+            "list": "products",
+            "position": 5
+          },
+          {
+            'id':'006',
+            "brand":"CeramicsLab",
+            "name": "Fellini",
+            "price":"7.90",
+            "list":"product details",
+            "category":"Tassen",
+            "variant":"weiss",
+            "list": "products",
+            "position": 6
+          }
+         ]
+      }
+    }];
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTG2NFR');</script>
+    <!-- End Google Tag Manager -->
+
+    <script type="text/javascript">
+      function getProductId(clicked_id)
+      {
+          localStorage.setItem("clicked_product_id", clicked_id)
+      }
+    </script>
+
+    <!-- Navigation -->
+
+    <nav>
+      <div class="ui top fixed menu">
+        <a href="1_index.html">
+          <div class="item">
+            <img src="img/Logo/00_logo.png">
+          </div>
+        </a>
+        <a href="2_products.html" class="item">Produkte</a>
+        <a href="6_under_construction.html" class="item">Über Uns</a>
+        <a href="6_under_construction.html" class="item">Anmelden</a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="sixteen wide column">
+      <img class="ui fluid image" src="img/banner_beans.jpg">
+    </div>
+
+    <!-- Main Page -->
+
+    <main>
+      <div class="ui two column grid">
+        <div class="two wide column">
+          <!-- Sidebar -->
+          <div class="ui vertical fluid tabular menu">
+            <a class="item">
+              Porzellan
+            </a>
+            <a class="item active">
+              Steingut
+            </a>
+          </div>
+        </div>
+
+        <div class="fourteen wide column">
+
+          <!-- items -->
+          <div id="products_list" class="ui padded grid">
+            <div class="seven wide column">
+              <!-- items left -->
+              <div class="ui divided items">
+                <!-- item left 1 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_01.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">La Tazza</a>
+                    <span id="name" class = "modell">Uno</span>
+                    <div class="meta">
+                      <span id="price" class="preis">9.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Portugal in Handarbeit aus Porzellan hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="001" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html'; dataLayer.push({'product_id':001, 'event': 'prodDetailsClick'}); clickProductDataLayerPush(this.id)">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Porzellan</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item left 2 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_02.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">La Tazza</a>
+                    <span id="name" class = "modell">Due</span>
+                    <div class="meta">
+                      <span id="price" class="preis">10.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Portugal in Handarbeit aus Steingut hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="002" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Steingut</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item left 3 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_03.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">Cuppa</a>
+                    <span id="name" class = "modell">One Plus</span>
+                    <div class="meta">
+                      <span id="price" class="preis">11.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Grossbritannien in Handarbeit aus Porzellan hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="003" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Porzellan</div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="seven wide column">
+              <!-- items right -->
+              <div class="ui divided items">
+                <!-- item right 1 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_04.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">Cuppa</a>
+                    <span id="name" class = "modell">Two Extra</span>
+                    <div class="meta">
+                      <span id="price" class="preis">12.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Grossbritannien in Handarbeit aus Steingut hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="004" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Steingut</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- item right 2 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_05.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">CeramicsLab</a>
+                    <span id="name" class = "modell">Bova</span>
+                    <div class="meta">
+                      <span id="price" class="preis">8.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Italien in Handarbeit aus Porzellan hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="005" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Porzellan</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- item right 3 -->
+                <div class="item">
+                  <div class="image">
+                    <img src="img/img_06.jpg">
+                  </div>
+                  <div class="content">
+                    <a id="brand" class="header">CeramicsLab</a>
+                    <span id="name" class = "modell">Fellini</span>
+                    <div class="meta">
+                      <span id="price" class="preis">7.90</span>
+                    </div>
+                    <div class="description">
+                      <p>Diese robuste und langelbige Tasse wird in Italien in Handarbeit aus Porzellan hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                    </div>
+                    <div class="extra">
+                      <button id="006" class="ui right floated primary button" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                        Details
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+
+                      <div id="variant" class="ui label color">Weiss</div>
+                      <div class="ui label material">Porzellan</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="sixteen wide centered column">
+        <div class="ui horizontal segments">
+          <div class="ui segment">
+            <p>Esprezzo Inc.</p>
+          </div>
+          <div class="ui segment">
+            <p></p>
+          </div>
+          <div class="ui segment">
+            <p>Kontakt</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

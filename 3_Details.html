@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Esprezzo | Your Perfect Cup</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/a86c639b2f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <script>
+      dataLayer = [{
+        'pageid': localStorage.clicked_product_id,
+      }];
+    </script>
+
+    <!--
+    <script>
+    // Measure a view of product details. This example assumes the detail view occurs on pageload,
+    // and also tracks a standard pageview of the details page.
+    dataLayer.push({
+      'ecommerce': {
+        'detail': {
+          'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.
+          'products': [{
+            'name': 'Triblend Android T-Shirt',         // Name or ID is required.
+            'id': '12345',
+            'price': '15.25',
+            'brand': 'Google',
+            'category': 'Apparel',
+            'variant': 'Gray'
+           }]
+         }
+       }
+    });
+  </script>
+-->
+
+    <!-- Google Tag Manager -->
+    <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTG2NFR');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Navigation -->
+
+    <nav>
+      <div class="ui top fixed menu">
+        <a href="1_index.html">
+          <div class="item">
+            <img src="img/Logo/00_logo.png">
+          </div>
+        </a>
+        <a href="2_products.html" class="item">Produkte</a>
+        <a href="6_under_construction.html" class="item">Über Uns</a>
+        <a href="6_under_construction.html" class="item">Anmelden</a>
+        <a href="4_cart2.html" class="item">Warenkorb</a>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="sixteen wide column">
+      <img class="ui fluid image" src="img/banner_beans.jpg">
+    </div>
+
+    <!-- Main Page -->
+
+    <main>
+      <div class="ui padded grid">
+        <!-- Left top (pic + name + price) -->
+        <div id="product_details" class="eight wide column">
+          <img id="product_image" class="ui medium centered circular image" src="">
+          <div class="ui basic center aligned segment">
+            <p>Diese robuste und langelbige Tasse wird in Portugal in Handarbeit aus Porzellan hergestellt.
+            Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+          </div>
+        </div>
+        <!-- Right top (details) -->
+        <div class="eight wide column">
+          <div class="ui two column grid">
+            <!-- right -->
+            <div class="column">
+              <div class="ui vertical segment">
+                <h4>Hersteller</h4>
+                <a id="brand" href="#">La Tazza</a>
+              </div>
+              <div class="ui vertical segment">
+              <h4>Preis</h4>
+                <a id="price" class="ui basic label">19.90</a>
+              </div>
+              <div class="ui vertical segment">
+                <h4>Farbe</h4>
+                <a id="variant" class="ui basic label">Weiss</a>
+              </div>
+              <div class="ui vertical segment">
+                <div class="ui form">
+                  <div class="field">
+                    <h4>Anzahl</h4>
+                    <select id="addToCartAmount" class="ui search dropdown">
+                      <option value="">Stück</option>
+                      <option value="1">1 Stück</option>
+                      <option value="2">2 Stück</option>
+                      <option value="3">3 Stück</option>
+                      <option value="4">4 Stück</option>
+                      <option value="5">5 Stück</option>
+                      <option value="6">6 Stück</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="ui vertical segment">
+                <h4>Verfügbarkeit</h4>
+                <a class="ui green basic label">An Lager</a>
+              </div>
+            </div>
+
+            <!-- left -->
+            <div class="column">
+              <div class="ui vertical segment">
+                <h4>Modell</h4>
+                <p id="name">Uno</p>
+              </div>
+              <div class="ui vertical segment">
+                <h4>Grösse</h4>
+                <a class="ui basic label">60 ml</a>
+              </div>
+              <div class="ui vertical segment">
+                <h4>Material</h4>
+                <a class="ui basic label">Porzellan</a>
+              </div>
+              <div class="ui vertical segment">
+                <h4>In den Warenkorb</h4>
+                <div class="ui inverted green vertical animated button" tabindex="0", onclick="addToCartDataLayerPush()">
+                  <div class="hidden content">Shop</div>
+                  <div class="visible content">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Bottom (description) -->
+
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="sixteen wide centered column">
+        <div class="ui horizontal segments">
+          <div class="ui segment">
+            <p>Esprezzo Inc.</p>
+          </div>
+          <div class="ui segment">
+            <p></p>
+          </div>
+          <div class="ui segment">
+            <p>Kontakt</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
