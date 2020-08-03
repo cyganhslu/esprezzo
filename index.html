@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Esprezzo | Your Perfect Cup</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/a86c639b2f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <script> (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTG2NFR');</script>
+    <!-- End Google Tag Manager -->
+
+    <script type="text/javascript">
+      function getProductId(clicked_id)
+      {
+          localStorage.setItem("clicked_product_id", clicked_id)
+      }
+    </script>
+
+    <!-- Navigation -->
+
+    <nav>
+      <div class="ui top fixed menu">
+        <a href="1_index.html">
+          <div class="item">
+            <img src="img/Logo/00_logo.png">
+          </div>
+        </a>
+        <a href="2_products.html" class="item">Produkte</a>
+        <a href="6_under_construction.html" class="item">Über Uns</a>
+        <a href="6_under_construction.html" class="item">Anmelden</a>
+      </div>
+    </nav>
+
+    <!-- Main Page -->
+
+    <main>
+      <div class="ui grid">
+
+    <!-- Banner -->
+        <div class="sixteen wide column">
+          <img class="ui fluid image" src="img/banner_beans_3.jpg">
+        </div>
+
+    <!-- Intro -->
+        <div class="sixteen wide centered column">
+          <div class="ui basic padded segment">
+            <h2 class="ui header">Wilkommen auf Esprezzo</h2>
+            <p>
+Hier dreht sich alles um die perfekte Tasse für ihren Espresso.
+Wir führen ein kleines aber hochwertiges Angebot an Espressotassen, die mit zeitlosem Design und Langlebigkeit überzeugen</p>
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Item Fokus -->
+        <div class="eight wide column">
+          <div class="ui basic padded segment">
+            <h2>Warum eine gute Tasse den Unterschied ausmacht.</h2>
+            <p>
+              Gute Espressotassen zeichnen sich dadurch aus, dass sie ein gutes Wärme Speichervermögen aufweisen und den Geschmack des Espressos nicht verfälschen. Hier haben sich vorallem Keramik und Steingut Tassen in Tulpenform bewährt.
+            </p>
+            <a href="2_products.html">
+              <button class="ui button">
+                Produkte
+              </button>
+            </a>
+          </div>
+        </div>
+
+    <!-- Item Bestseller -->
+        <div class="eight wide column">
+          <div class="ui basic padded segment">
+            <div class="ui divided items">
+
+              <div class="item">
+                <div class="image">
+                  <img class="ui medium circular image" src="img/img_01.jpg">
+                </div>
+                <div class="content" id="001" onclick="getProductId(this.id); window.location.href = '3_Details.html';">
+                  <a class="header">La Tazza Uno</a>
+
+                  <div class="meta">
+                    <span class="price">19.90</span>
+                  </div>
+                  <div class="description">
+                    <p>Diese robuste und langelbige Tasse wird in Portugal in Handarbeit aus Porzellan hergestellt.
+Die Espressotasse begeistert mit durchdachtem, zeitlosen Design und hochwertigen Verarbeitung.</p>
+                  </div>
+                  <div class="extra">
+                    <a href="4_cart.html">
+                      <div class="ui right floated  button">
+                        <!-- in den Warenkorb -->
+                        <a >
+                          Details
+                        </a>
+                      </div>
+                    </a>
+                    <div class="ui label">Schwarz</div>
+                    <div class="ui label">Rot</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+
+
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="sixteen wide centered column">
+        <div class="ui horizontal segments">
+          <div class="ui segment">
+            <p>Esprezzo Inc.</p>
+          </div>
+          <div class="ui segment">
+            <p></p>
+          </div>
+          <div class="ui segment">
+            <p>Kontakt</p>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
